@@ -1,0 +1,35 @@
+<h1> Here is your car! </h1>
+
+Make: <%= @car.make %>
+<br/>
+Year: <%= @car.model_year %>
+<br/>
+Speed: <%= @car.speed %>Km/h
+<br/>
+Lights: <%= @car.light_status %>
+<br/>
+Parking Brake: <%= @car.parking_brake_status %>
+<br/>
+
+<form action="accelerate" method="get">
+  <input type="submit" name="accelerate" value="Accelerate">
+</form>
+
+<form action="brake" method="get">
+  <input type="submit" name="brake" value="Brake">
+</form>
+
+<form action="light_switch" method="get">
+  <input type="submit" name="light_switch" value="Light Switch">
+</form>
+
+<form action="parking_brake_switch" method="get">
+  <label>Parking Brake</label><br>
+  <label>On</label>
+  <input type="radio" name="Ebrake" value="brake_on" id="brake_on">
+  <br>
+  <label>Off</label>
+  <input type="radio" name="Ebrake" value="brake_off" id="brake_off">
+  <br>
+  <input type="submit" name="parking_brake_switch" value="Change Parking Brake">
+</form>
